@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universitet Online Test Tizimi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* General styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+    }
+
+    nav ul li {
+      margin-left: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff6347;
+    }
+
+    /* Hero section styles */
+    .hero {
+      background-image: linear-gradient(to right, #ff6347, #ffa07a);
+      color: #fff;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #fff;
+      color: #ff6347;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 2rem;
+      font-weight: 700;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff6347;
+      color: #fff;
+    }
+
+    /* Features section styles */
+    .features {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .feature {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .feature i {
+      font-size: 3rem;
+      color: #ff6347;
+      margin-bottom: 1rem;
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Testimonials section styles */
+    .testimonials {
+      background-color: #f8f8f8;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial blockquote {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial cite {
+      font-weight: 700;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer p {
+      margin-bottom: 1rem;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #ff6347;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Bosh sahifa</a></li>
+        <li><a href="#">Haqida</a></li>
+        <li><a href="#">Aloqa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Talabalar uchun onlayn test tizimi</h1>
+      <p>Qulay, ishonchli va masofaviy testlar</p>
+      <a href="http://127.0.0.1:8000/swagger/" class="btn">Ro'yxatdan o'tish</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>Tizimning afzalliklari</h2>
+      <div class="feature">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Mobil qurilmalarga moslashgan</h3>
+        <p>Test tizimimiz mobil qurilmalarda ham ishlay oladi.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Xavfsiz va ishonchli</h3>
+        <p>Ma'lumotlaringiz xavfsiz saqlanadi va testlar ishonchli.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-chart-line"></i>
+        <h3>Natijalarni kuzatish</h3>
+        <p>O'z natijalari va rivojlanishingizni kuzatish imkoniyati.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>Bizning talabalarimiz nima deydi?</h2>
+      <div class="testimonial">
+        <img src="student1.jpg" alt="Student 1">
+        <blockquote>"Bu test tizimi juda qulayva foydalanuvchi-do'st. Men o'z bilimlarimni nazorat qilish va o'qishimni yaxshilash imkoniyatiga ega bo'ldim."</blockquote>
+        <cite>- Alisher Sultonov</cite>
+      </div>
+      <div class="testimonial">
+        <img src="student2.jpg" alt="Student 2">
+        <blockquote>"Men bu test tizimini o'zgalarga ham tavsiya qilaman. U juda xavfsiz va ishonchli, hamda natijalarni kuzatish uchun ajoyib vosita."</blockquote>
+        <cite>- Zarina Karimova</cite>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Universitet Online Test Tizimi</p>
+      <p>
+        <a href="#">Shartlar va qoidalar</a>
+        <a href="#">Maxfiylik siyosati</a>
+      </p>
+      <p>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </p>
+    </div>
+  </footer>
+  
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
+  </body>
+  </html>
